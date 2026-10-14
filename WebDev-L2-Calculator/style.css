@@ -1,0 +1,13 @@
+*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+body { min-height:100vh; display:flex; align-items:center; justify-content:center; padding:1rem; background:#1d2433; font-family:Arial,sans-serif; }
+.calc { width:100%; max-width:340px; background:#2a3348; padding:1rem; border-radius:12px; }
+#display { background:#10151f; color:#fff; font-size:2.2rem; text-align:right; padding:1rem; border-radius:8px; margin-bottom:1rem; min-height:4rem; overflow-x:auto; white-space:nowrap; }
+/* CSS Grid layout for buttons */
+.keys { display:grid; grid-template-columns:repeat(4,1fr); gap:.6rem; }
+button { padding:1rem 0; font-size:1.3rem; border:none; border-radius:8px; background:#3d4966; color:#fff; cursor:pointer; }
+button:hover { filter:brightness(1.2); }
+button:focus-visible { outline:3px solid #ffd23f; }
+.op { background:#e08a1e; }
+.fn { background:#5b6784; }
+.eq { background:#2e9e5b; grid-row:span 2; }
+.zero { grid-column:span 2; }

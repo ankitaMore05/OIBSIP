@@ -1,0 +1,20 @@
+*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:"Lato",Arial,sans-serif; font-size:1.05rem; line-height:1.75; color:#2b2b2b; }
+h1,h2,blockquote { font-family:"Playfair Display",Georgia,serif; }   /* serif headings */
+.top { background:#0b2447; color:#fff; text-align:center; padding:4rem 5% 3rem; }
+h1 { font-size:clamp(2rem,6vw,3.5rem); }
+.tagline { margin-top:.75rem; color:#f4c95d; font-style:italic; font-size:1.2rem; }
+.photo { background:#f4c95d; padding:2.5rem 5%; text-align:center; }
+.photo img { width:100%; max-width:420px; height:auto; min-height:200px; background:#fff; border:8px solid #0b2447; }
+figcaption { margin-top:.6rem; font-size:.9rem; color:#0b2447; }
+.bio, .timeline-section { max-width:760px; margin:0 auto; padding:3.5rem 5%; }
+h2 { font-size:1.9rem; color:#0b2447; margin-bottom:1rem; }
+.bio p { margin-bottom:1.1rem; }
+.timeline-section { max-width:none; background:#eef2f9; }
+.timeline { list-style:none; max-width:760px; margin:0 auto; border-left:4px solid #0b2447; }
+.timeline li { padding:.6rem 0 .6rem 1.25rem; }
+.timeline strong { color:#0b2447; display:inline-block; min-width:3.5rem; }
+.quote { background:#0b2447; padding:4rem 5%; }
+blockquote { max-width:720px; margin:0 auto; color:#fff; font-size:1.6rem; line-height:1.5; text-align:center; border-top:4px solid #f4c95d; padding-top:1.5rem; }
+cite { display:block; margin-top:1rem; font:400 .95rem "Lato",Arial,sans-serif; color:#f4c95d; }
+footer { text-align:center; padding:1.5rem 5%; font-size:.9rem; background:#f4c95d; color:#0b2447; }

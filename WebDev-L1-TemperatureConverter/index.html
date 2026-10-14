@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Temperature Converter</h1>
+
+    <label for="value">Temperature</label>
+    <input id="value" type="text" inputmode="decimal" placeholder="e.g. 36.6" autocomplete="off">
+
+    <label for="unit">Convert from</label>
+    <select id="unit">
+      <option value="C">Celsius (&deg;C)</option>
+      <option value="F">Fahrenheit (&deg;F)</option>
+      <option value="K">Kelvin (K)</option>
+    </select>
+
+    <button id="convert" type="button">Convert</button>
+
+    <p id="error" role="alert"></p>
+
+    <div id="result" aria-live="polite">
+      <p>Celsius: <strong id="outC">-</strong></p>
+      <p>Fahrenheit: <strong id="outF">-</strong></p>
+      <p>Kelvin: <strong id="outK">-</strong></p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="box">
+  <h1>Create account</h1>
+  <form id="registerForm" novalidate>
+    <label for="username">Username or email</label>
+    <input id="username" type="text" autocomplete="username">
+    <label for="password">Password (8+ characters, at least 1 number)</label>
+    <input id="password" type="password" autocomplete="new-password">
+    <button type="submit">Register</button>
+  </form>
+  <p class="msg" id="msg" role="alert"></p>
+  <p class="alt">Already registered? <a href="login.html">Login</a></p>
+</main><script src="auth.js"></script></body></html>

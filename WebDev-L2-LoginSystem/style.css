@@ -1,0 +1,13 @@
+*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+body { min-height:100vh; display:flex; align-items:center; justify-content:center; padding:1rem; background:#ecebf7; font-family:Arial,sans-serif; color:#25234a; }
+.box { width:100%; max-width:400px; background:#fff; padding:2rem; border-radius:10px; border-top:6px solid #4b3fb3; }
+h1 { font-size:1.6rem; margin-bottom:1rem; }
+label { display:block; margin:1rem 0 .3rem; font-weight:bold; }
+input, button { width:100%; padding:.7rem; font-size:1rem; border-radius:6px; border:1px solid #a9a5d6; }
+button { margin-top:1.25rem; background:#4b3fb3; color:#fff; border:none; cursor:pointer; font-weight:bold; }
+button:hover { background:#2f2780; }
+:focus-visible { outline:3px solid #f2b134; outline-offset:2px; }
+.msg { margin-top:1rem; min-height:1.3rem; font-weight:bold; color:#b3261e; }
+.ok { color:#1e7a46; }
+p.alt { margin-top:1rem; text-align:center; }
+a { color:#4b3fb3; }

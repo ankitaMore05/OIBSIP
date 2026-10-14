@@ -1,0 +1,36 @@
+:root { --ink:#1b1b3a; --teal:#0f8b8d; --amber:#f2b134; --tint:#eef6f6; --white:#fff; --text:#3a3f4b; }
+*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; scroll-padding-top:70px; }
+body { font-family:"Inter",Arial,sans-serif; font-size:1.05rem; line-height:1.65; color:var(--text); }
+h1,h2,h3,.brand { font-family:"Sora",Arial,sans-serif; color:var(--ink); line-height:1.15; }
+h1 { font-size:clamp(2rem,5vw,3.2rem); font-weight:800; }
+h2 { font-size:1.9rem; margin-bottom:1.25rem; }
+h3 { font-size:1.2rem; margin-bottom:.5rem; }
+a { color:var(--teal); }
+a:focus-visible,.btn:focus-visible { outline:3px solid var(--amber); outline-offset:3px; }
+
+.nav { position:sticky; top:0; z-index:10; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem; padding:1rem 5%; background:var(--ink); }
+.brand { color:var(--amber); text-decoration:none; font-weight:800; font-size:1.2rem; }
+.nav nav { display:flex; gap:1.2rem; flex-wrap:wrap; }
+.nav nav a { color:var(--white); text-decoration:none; }
+.nav nav a:hover { color:var(--amber); }
+
+.hero { display:flex; align-items:center; gap:2.5rem; flex-wrap:wrap; padding:5rem 5%; background:var(--tint); }
+.avatar { width:160px; height:160px; border-radius:50%; background:var(--teal); color:var(--white); display:flex; align-items:center; justify-content:center; font:800 2.6rem "Sora",Arial,sans-serif; border:6px solid var(--amber); flex-shrink:0; }
+.role { margin:.6rem 0 1.5rem; font-weight:500; color:var(--teal); }
+.btn { display:inline-block; padding:.85rem 1.7rem; background:var(--ink); color:var(--white); text-decoration:none; border-radius:6px; font-weight:500; }
+.btn:hover { background:var(--teal); }
+
+.section { padding:4.5rem 5%; }
+.section > p { max-width:65ch; margin-bottom:.5rem; }
+.tint { background:var(--tint); }
+
+.skills { list-style:none; display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:1rem; }
+.skills li { background:var(--white); padding:1rem; text-align:center; border-bottom:4px solid var(--teal); font-weight:500; }
+
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem; }
+.cards article { padding:1.5rem; border:2px solid var(--ink); }
+.cards article p { margin-bottom:.8rem; }
+
+footer { text-align:center; padding:1.5rem 5%; background:var(--ink); color:var(--white); font-size:.9rem; }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
